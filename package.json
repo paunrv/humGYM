@@ -7,12 +7,14 @@
     "init": "^0.1.2"
   },
   "devDependencies": {},
-  "dependencies":{
-    "express":"*", "compression":"*", "nodemailer":"*", "body-parser":"*"
+  "dependencies": {
+    "express": "*",
+    "compression": "*",
+    "nodemailer": "*",
+    "body-parser": "*",
+    "validator": "*"
   },
   "keywords": [],
-  "author": "",
+  "author": "Paulina Noriega",
   "license": "ISC"
 }
-
-

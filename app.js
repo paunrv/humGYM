@@ -1,4 +1,3 @@
-/*jslint node: true */
 'use strict';
 
 var bodyParser = require('body-parser');
@@ -6,6 +5,7 @@ var express = require('express');
 var compress = require('compression');
 var app = express();
 var nodemailer = require('nodemailer');
+var validator = require('validator');
 var transporter = nodemailer.createTransport({
 	service: 'gmail',
 	auth: {
@@ -30,10 +30,12 @@ app.use(express.static(__dirname + '/static'));
 var jsonParser = bodyParser.json();
 
 app.post('/sendMail', jsonParser, function(request, response) {
-	if (request.email && request.name && request.message && request.tag) {
+	if (validator.isEmail(request.email) && validator.isAlpha(request.name) && request.message && request.tag) {
 		sendMail(request.email, request.name, request.message, request.tag);
 		response.status('200');
 
-	} else response.status('400');
+	} else {
+		response.status('400');
+	}
 });
 app.listen(process.env.PORT || 3000);
