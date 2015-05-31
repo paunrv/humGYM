@@ -1,5 +1,6 @@
 'use strict';
 var app = angular.module('humi', []);
+	
 	app.controller('ContenidoController', ['$scope', '$http', function($scope, $http) {
 		$scope.template = "principal.html"
 	}]);

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css"
+    rel="stylesheet" type="text/css">
+    <link href="css/animate.css" rel="stylesheet" type="text/css">
+    <link href="css/humi.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="Index.css">
+</head>
+
+<body ng-controller="ContenidoController">
+    <div class="navbar navbar-default navbar-fixed-top navbar-inverse">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand"><img height="20" alt="Brand" src="img/humiNombreBlanco.png"></a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-ex-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="" ng-click="template = 'principal.html'">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="" ng-click="template = 'horario.html'">Horario</a>
+                    </li>
+                    <li>
+                        <a href="" ng-click="template = 'contacto.html'">¡Contactanos!</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="cover">
+        <div class="cover-image" style="background-image : url('img/trofeos.jpg')"></div>
+    </div>
+    
+ <div class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="col-md-12">
+                            <div class="row"></div>
+                            <h1 class="text-danger text-left">Visión</h1>
+                            <p class="text-left">Ser el mejor GYM de la región con una gran variedad de
+                                <br>
+                                <strong>
+                                    <b>artes marciales y tipos de luchas.</b>
+                                </strong>
+                            </p>
+                            <h1 class="text-left text-primary">Misión</h1>
+                            <p class="text-left">Ofrecer a la comunidad de Ensenada un espacio especializado en el área
+                                de artes marciales y luchas, con excelentes instalaciones y maestros capacitádos.</p>
+                            <h1
+                            class="text-left text-success">Propuesta</h1>
+                                <p class="text-left">HUMI GYM, invita a todos los maestros con iniciativa, te ayuda a que empieces
+                                    a dar un servicio de calidad, profesional con instalcioens optimas e identidad
+                                    corporatíva.&nbsp;
+                                    <br>
+                                    <br>HUMI GYM renta el espacio para que puedas empezar tu propia escuela.&nbsp;
+                                    <br>
+                                    <b>5 días, 3 días 2 días a la semana</b>
+                                    <br>Tu dices cuales son tus necesidades y nosotros te apoyamos.</p>
+                                <b></b>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <h1 class="text-right text-warning">Historia</h1>
+                        <p class="text-justify">HUMI GYM nace con una iniciativa de Taekwondo. En la busqueda de un espacio
+                            optimo para poder dar clases, nos enfrentamos con que no habia ningun lugar
+                            para éste propósito, es cuando nace HUMI GYM; en un principio diseñado
+                            para que fuera un GYM de usos multiples; despúes de un estudio, se centra
+                            en las artes marciales y luchas, proporcionando un lugar con las condiciones
+                            ideales para éste tipo de actividades.</p>
+                        <h1 class="text-left">Valores</h1>
+                        <ul class="text-left">
+                            <li>Integridad</li>
+                            <li>Pasión</li>
+                            <li>Compromiso</li>
+                            <li>Calidad</li>
+                            <li>Respeto</li>
+                            <li>Innovación</li>
+                            <li>Filosofía de las diferntes técnicas</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+                                    <div class="col-md-4">
+                                        <img src="http://pingendo.github.io/pingendo-bootstrap/assets/user_placeholder.png"
+                                        class="center-block img-circle img-responsive">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <footer class="footer section section-success">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <h3 class="hidden-sm hidden-xs text-center text-inverse">Ubicación</h3>
+                                        <div class="section text-center">
+                                            <div class="container">
+                                                <div class="row">
+                                                    <h3 class="hidden-lg hidden-md text-center text-inverse">Ubicación</h3>
+                                                    <div class="col-md-3">
+                                                        <img class="center-block img-responsive" src="https://maps.googleapis.com/maps/api/staticmap?center=31.8707056,-116.6372022&amp;zoom=15&amp;size=120x120&amp;sensor=false&amp;&amp;markers=color:blue|31.8707056,-116.6372022">
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <h4 class="hidden-sm text-inverse">Calle Niza&nbsp;#396&nbsp;
+                                                            <br>Ampleación Moderna
+                                                            <br>Ensenada B.C. 22879</h4>
+                                                        </div>
+                                                        <div class="col-md-3">
+                                                            <div class="row">
+                                                                <div class="col-md-12">
+                                                                    <h4 class="text-inverse">Teléfono:</h4>
+                                                                    <h4 class="text-inverse">(646) 109 3879</h4>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-3">
+                                                            <div class="row">
+                                                                <div class="col-md-12">
+                                                                    <h4 class="text-inverse">Redes Sociales:</h4>
+                                                                    <a href="https://instagram.com/humitkd/"><i class="fa fa-2x fa-fw fa-instagram text-inverse"></i></a>
+                                                                    <a href="#"><i class="fa fa-2x fa-fw fa-twitter text-inverse"></i></a>
+                                                                    <a href="https://www.facebook.com/pages/HUMI/343999955723462"><i class="fa fa-2x fa-facebook fa-fw text-inverse"></i></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </footer>
+                            <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+                            <script src="js/humi.js"></script>
+                        </body>
+
+                        </html>
