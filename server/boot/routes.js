@@ -27,6 +27,8 @@ var sendMail = function(email, name, message) {
 
 var jsonParser = bodyParser.json();
 
+
+
 module.exports = function(app) {
 	app.post('/sendMail', jsonParser, function(request, response) {
 		if (validateMail(request.body.email, request.body.name, request.body.message)) {
@@ -36,9 +38,5 @@ module.exports = function(app) {
 			response.status('400');
 		}
 		response.end();
-	});
-
-	app.get('/', function(req, res) {
-		res.sendfile(__dirname + '/Index.html');
 	});
 };
