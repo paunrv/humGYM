@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="humi">
     
     <head>
         <meta charset="utf-8">
@@ -48,7 +48,7 @@
                             <img src="img/horario.png" class="center-block img-responsive">
                         </div>
                     </div>
-                    <table class="table">
+                    <table class="table" ng-controller="HorariosController">
                         <tbody>
                             <tr align="center">
                                 <td></td>
@@ -59,45 +59,27 @@
                                 <td>Viernes</td>
                             </tr>
                         </tbody>
-                        <tbody>
+
+
+                        <tbody ng-repeat="hora in horario | orderBy: 'prioridad'">
                             <tr align="center">
                                 <td>
-                                    <b>4:00 - 5:00</b>
+                                    <b>{{hora.horario}}</b>
                                 </td>
                                 <td>
-                                    <img src="img/primaria.png" class="center-block img-responsive">
+                                    <img ng-if="hora.lunes" ng-src="{{hora.lunes.imagen}}" class="center-block img-responsive">
                                 </td>
                                 <td>
-                                    <img src="img/kids.png" class="center-block img-responsive">
+                                    <img ng-if="hora.martes" ng-src="{{hora.martes.imagen}}" class="center-block img-responsive">
                                 </td>
                                 <td>
-                                    <img src="img/primaria.png" class="center-block img-responsive">
+                                    <img ng-if="hora.miercoles" ng-src="{{hora.miercoles.imagen}}" class="center-block img-responsive">
                                 </td>
                                 <td>
-                                    <img src="img/kids.png" class="center-block img-responsive">
+                                    <img ng-if="hora.jueves" ng-src="{{hora.jueves.imagen}}" class="center-block img-responsive">
                                 </td>
                                 <td>
-                                    <img src="img/primaria.png" class="center-block img-responsive">
-                                </td>
-                            </tr>
-                            <tr align="center">
-                                <td>
-                                    <b>5:00 - 6:00</b>
-                                </td>
-                                <td>
-                                    <img src="" class="center-block img-responsive">
-                                </td>
-                                <td>
-                                    <img src="img/avanzados.png" class="center-block img-responsive">
-                                </td>
-                                <td>
-                                    <img src="img/avanzados.png" class="center-block img-responsive">
-                                </td>
-                                <td>
-                                    <img src="img/avanzados.png" class="center-block img-responsive">
-                                </td>
-                                <td>
-                                    <img src="" class="center-block img-responsive">
+                                    <img ng-if="hora.viernes" ng-src="{{hora.viernes.imagen}}" class="center-block img-responsive">
                                 </td>
                             </tr>
                         </tbody>
@@ -157,6 +139,8 @@
                 </div>
             </div>
         </footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+        <script src="js/humi.js"></script>
     </body>
 
 </html>
