@@ -27,6 +27,8 @@ var sendMail = function(email, name, message) {
 
 var jsonParser = bodyParser.json();
 
+
+
 module.exports = function(app) {
 	app.post('/sendMail', jsonParser, function(request, response) {
 		if (validateMail(request.body.email, request.body.name, request.body.message)) {
