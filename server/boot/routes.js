@@ -37,4 +37,8 @@ module.exports = function(app) {
 		}
 		response.end();
 	});
+
+	app.get('/', function(req, res) {
+		res.sendfile(__dirname + '/Index.html');
+	});
 };
