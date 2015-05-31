@@ -1,0 +1,38 @@
+{
+  "name": "Clase",
+  "plural": "Clases",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "prioridad": {
+      "type": "number",
+      "required": true
+    },
+    "horario": {
+      "type": "string",
+      "required": true
+    },
+    "lunes": {
+      "type": "object"
+    },
+    "martes": {
+      "type": "object"
+    },
+    "miercoles": {
+      "type": "object"
+    },
+    "jueves": {
+      "type": "object"
+    },
+    "viernes": {
+      "type": "object"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": []
+}
