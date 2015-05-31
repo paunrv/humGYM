@@ -23,7 +23,7 @@ var sendMail = function(email, name, message, tag) {
 	transporter.sendMail({
 		from: 'humigym@gmail.com',
 		to: 'humigym@gmail.com',
-		subject: tag + ', ' + name,
+		subject: 'Comentario de: ' + name,
 		text: message + '\n' + email
 	});
 };
