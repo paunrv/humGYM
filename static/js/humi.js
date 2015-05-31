@@ -1,5 +1,9 @@
 'use strict';
 var app = angular.module('humi', []);
+	app.controller('ContenidoController', ['$scope', '$http', function($scope, $http) {
+		$scope.template = "principal.html"
+	}]);
+
 
 	app.controller('ComentariosController', ['$scope', '$http', function($scope, $http) {
 		$scope.nombre = '';

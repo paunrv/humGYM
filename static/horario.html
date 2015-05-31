@@ -1,146 +1,50 @@
-<!DOCTYPE html>
-<html ng-app="humi">
-    
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-        <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-        <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css"
-        rel="stylesheet" type="text/css">
-        <link href="http://pingendo.github.io/pingendo-bootstrap/themes/default/bootstrap.css"
-        rel="stylesheet" type="text/css">
-    </head>
-    
-    <body>
-        <div class="navbar navbar-default">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="concepto.html"><span>Academia de luchas y artes marciales</span></a>
-            </div>
-            <div class="collapse navbar-collapse" id="navbar-ex-collapse">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="active">
-                        <a href="Index.html">Inicio</a>
-                    </li>
-                    <li class="active">
-                        <a href="horario.html">Horario</a>
-                    </li>
-                    <li class="active">
-                        <a href="contacto.html">¡Contactanos!</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="section">
-            <div class="container">
-                <row></row>
-            </div>
+<div class="section">
+    <div class="container">
+        <row></row>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
             <div class="row">
                 <div class="col-md-12">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <img src="img/horario.png" class="center-block img-responsive">
-                        </div>
-                    </div>
-                    <table class="table" ng-controller="HorariosController">
-                        <tbody>
-                            <tr align="center">
-                                <td></td>
-                                <td>Lunes</td>
-                                <td>Martes</td>
-                                <td>Miércoles</td>
-                                <td>Jueves</td>
-                                <td>Viernes</td>
-                            </tr>
-                        </tbody>
-
-
-                        <tbody ng-repeat="hora in horario | orderBy: 'prioridad'">
-                            <tr align="center">
-                                <td>
-                                    <b>{{hora.horario}}</b>
-                                </td>
-                                <td>
-                                    <img ng-if="hora.lunes" ng-src="{{hora.lunes.imagen}}" class="center-block img-responsive">
-                                </td>
-                                <td>
-                                    <img ng-if="hora.martes" ng-src="{{hora.martes.imagen}}" class="center-block img-responsive">
-                                </td>
-                                <td>
-                                    <img ng-if="hora.miercoles" ng-src="{{hora.miercoles.imagen}}" class="center-block img-responsive">
-                                </td>
-                                <td>
-                                    <img ng-if="hora.jueves" ng-src="{{hora.jueves.imagen}}" class="center-block img-responsive">
-                                </td>
-                                <td>
-                                    <img ng-if="hora.viernes" ng-src="{{hora.viernes.imagen}}" class="center-block img-responsive">
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <img src="img/horario.png" class="center-block img-responsive">
                 </div>
             </div>
+            <table class="table" ng-controller="HorariosController">
+                <tbody>
+                    <tr align="center">
+                        <td></td>
+                        <td>Lunes</td>
+                        <td>Martes</td>
+                        <td>Miércoles</td>
+                        <td>Jueves</td>
+                        <td>Viernes</td>
+                    </tr>
+                </tbody>
+
+
+                <tbody ng-repeat="hora in horario | orderBy: 'prioridad'">
+                    <tr align="center">
+                        <td>
+                            <b>{{hora.horario}}</b>
+                        </td>
+                        <td>
+                            <img ng-if="hora.lunes" ng-src="{{hora.lunes.imagen}}" class="center-block img-responsive">
+                        </td>
+                        <td>
+                            <img ng-if="hora.martes" ng-src="{{hora.martes.imagen}}" class="center-block img-responsive">
+                        </td>
+                        <td>
+                            <img ng-if="hora.miercoles" ng-src="{{hora.miercoles.imagen}}" class="center-block img-responsive">
+                        </td>
+                        <td>
+                            <img ng-if="hora.jueves" ng-src="{{hora.jueves.imagen}}" class="center-block img-responsive">
+                        </td>
+                        <td>
+                            <img ng-if="hora.viernes" ng-src="{{hora.viernes.imagen}}" class="center-block img-responsive">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
-        <footer class="section section-danger">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-6">
-                        <h1 class="text-center text-inverse">Ubicación</h1>
-                        <div class="section">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-md-3">
-                                        <img class="img-responsive" src="https://maps.googleapis.com/maps/api/staticmap?center=31.8707056,-116.6372022&amp;zoom=15&amp;size=250x250&amp;sensor=false&amp;&amp;markers=color:blue|31.8707056,-116.6372022">
-                                    </div>
-                                    <div class="col-md-3">
-                                        <h2 class="text-inverse">Calle Niza&nbsp;#396&nbsp;
-                                            <br>Ampleación Moderna
-                                            <br>Ensenada B.C. 22879</h2>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <div class="row">
-                                            <div class="col-md-12"></div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <div class="row">
-                                                    <div class="col-md-12">
-                                                        <h2 class="text-center text-inverse">Teléfono:</h2>
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-md-12">
-                                                        <h2 class="text-center text-inverse">(646) 109 3879</h2>
-                                                    </div>
-                                                </div>
-                                                <h2 class="text-center text-inverse">Redes Sociales:</h2>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-12 hidden-xs text-center">
-                                                <a href="https://instagram.com/humitkd/"><i class="fa fa-3x fa-fw fa-instagram text-inverse"></i></a>
-                                                <a href="#"><i class="fa fa-3x fa-fw fa-twitter text-inverse"></i></a>
-                                                <a href="https://www.facebook.com/pages/HUMI/343999955723462"><i class="fa fa-3x fa-fw fa-facebook text-inverse"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
-        <script src="js/humi.js"></script>
-    </body>
-
-</html>
+    </div>
+</div>

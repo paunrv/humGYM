@@ -1,0 +1,21 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  padding-top: 70px; 
+}
+*{
+  margin: 0;
+}
+
+.wrapper{
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -0em;
+}
+
+.footer, .push{
+  clear: both;
+}
