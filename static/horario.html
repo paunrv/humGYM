@@ -1,50 +1,80 @@
-<div class="section">
-    <div class="container">
-        <row></row>
-    </div>
-    <div class="row">
-        <div class="col-md-12">
-            <div class="row">
-                <div class="col-md-12">
-                    <img src="img/horario.png" class="center-block img-responsive">
+
+        <link href="css/contacto.css" rel="stylesheet" type="text/css">
+
+        <div class="wrapper" ng-controller="HorariosController">
+            <div class="section">
+                <div class="container">
+                    <row></row>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="row">
+                            <h1 class="text-center">Horarios</h1>
+                        </div>
+                        <table class="table">
+                            <tbody>
+                                <tr align="center">
+                                    <td></td>
+                                    <td>Lunes</td>
+                                    <td>Martes</td>
+                                    <td>Miércoles</td>
+                                    <td>Jueves</td>
+                                    <td>Viernes</td>
+                                </tr>
+                            </tbody>
+                            <tbody ng-repeat="hora in horario | orderBy: 'prioridad'">
+                                <tr align="center">
+                                    <td>
+                                        <b>{{hora.horario}}</b>
+                                    </td>
+                                    <td>
+                                        <a href="" data-toggle="modal" data-target="#infoModal" ng-click="seleccionarClase(hora.lunes.clase)()"><img ng-if="hora.lunes" ng-src="{{hora.lunes.imagen}}" class="center-block img-responsive"></a>
+                                    </td>
+                                    <td>
+                                        <a href="" data-toggle="modal" data-target="#infoModal" ng-click="seleccionarClase(hora.martes.clase)()"><img ng-if="hora.martes" ng-src="{{hora.martes.imagen}}" class="center-block img-responsive"></a>
+                                    </td>
+                                    <td>
+                                        <a href="" data-toggle="modal" data-target="#infoModal" ng-click="seleccionarClase(hora.miercoles.clase)()"><img ng-if="hora.miercoles" ng-src="{{hora.miercoles.imagen}}" class="center-block img-responsive"></a>
+                                    </td>
+                                    <td>
+                                        <a href="" data-toggle="modal" data-target="#infoModal" ng-click="seleccionarClase(hora.jueves.clase)()"><img ng-if="hora.jueves" ng-src="{{hora.jueves.imagen}}" class="center-block img-responsive"></a>
+                                    </td>
+                                    <td>
+                                        <a href="" data-toggle="modal" data-target="#infoModal" ng-click="seleccionarClase(hora.viernes.clase)()"><img ng-if="hora.viernes" ng-src="{{hora.viernes.imagen}}" class="center-block img-responsive"></a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
-            <table class="table" ng-controller="HorariosController">
-                <tbody>
-                    <tr align="center">
-                        <td></td>
-                        <td>Lunes</td>
-                        <td>Martes</td>
-                        <td>Miércoles</td>
-                        <td>Jueves</td>
-                        <td>Viernes</td>
-                    </tr>
-                </tbody>
-
-
-                <tbody ng-repeat="hora in horario | orderBy: 'prioridad'">
-                    <tr align="center">
-                        <td>
-                            <b>{{hora.horario}}</b>
-                        </td>
-                        <td>
-                            <img ng-if="hora.lunes" ng-src="{{hora.lunes.imagen}}" class="center-block img-responsive">
-                        </td>
-                        <td>
-                            <img ng-if="hora.martes" ng-src="{{hora.martes.imagen}}" class="center-block img-responsive">
-                        </td>
-                        <td>
-                            <img ng-if="hora.miercoles" ng-src="{{hora.miercoles.imagen}}" class="center-block img-responsive">
-                        </td>
-                        <td>
-                            <img ng-if="hora.jueves" ng-src="{{hora.jueves.imagen}}" class="center-block img-responsive">
-                        </td>
-                        <td>
-                            <img ng-if="hora.viernes" ng-src="{{hora.viernes.imagen}}" class="center-block img-responsive">
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+            <div id="infoModal" role="dialog" class="modal fade" tabindex="-1" aria-labelledby="infoModal"
+            aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">×</button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-md-2" ng-show="valido">
+                                    <img ng-src="{{imagen}}" class="img-responsive" height="200"
+                                    width="200">
+                                </div>
+                                <div class="col-md-10" ng-show="valido">
+                                    <blockquote>
+                                        <p>{{seleccionado.descripcion}}</p>
+                                        <footer>{{seleccionado.footer}}</footer>
+                                    </blockquote>
+                                </div>
+                            </div>
+                            <p ng-hide="valido">No pudimos obtener información de tu clase, favor de intentar más tarde
+                                o comunícate con nosotros. Gracias</p>
+                        </div>
+                        <div class="modal-footer">
+                            <a class="btn btn-default" data-dismiss="modal">Close</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-</div>
