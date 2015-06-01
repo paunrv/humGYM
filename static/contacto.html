@@ -1,0 +1,70 @@
+
+<link href="css/contacto.css"
+rel="stylesheet" type="text/css">
+<div class="section" ng-controller="ComentariosController">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h4>Ponte en contacto con nosotros.</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <form name="forma" class="form-horizontal" role="form">
+                    <div class="form-group">
+                        <div class="col-sm-2">
+                            <label for="inputNombrel3" class="control-label">Nombre</label>
+                        </div>
+                        <div class="col-sm-10">
+                            <input ng-model="nombre" type="text" class="form-control" id="inputNombrel3"
+                            placeholder="Nombre">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-2">
+                            <label for="inputMensagel3" class="control-label">Mensage</label>
+                        </div>
+                        <div class="col-sm-10">
+                            <textarea ng-model="mensaje" type="text" class="form-control" id="inputMensagel3"
+                            placeholder="Mensage"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-2">
+                            <label type="email" ng-model="email" for="inputEmail3" class="control-label">Email</label>
+                        </div>
+                        <div class="col-sm-10">
+                            <input type="email" ng-model="email" class="form-control" id="inputEmail3"
+                            placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10 col-md-1">
+                            <button class="btn btn-default" data-toggle="modal" data-target="#myModal" ng-click="sendComment()"
+                            type="button">Enviar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div id="myModal" role="dialog" class="modal fade" tabindex="-1" aria-labelledby="myModal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                    <h4 ng-show="successful" class="Titulo">Comentario enviado con éxito!</h4>
+                    <h4 ng-hide="successful" class="Titulo">Oooops! Hubo un problema!</h4>
+                </div>
+                <div class="modal-body">
+                    <p ng-show="successful">Muchas gracias por tus comentarios! Nos pondremos en contacto contigo a la brevedad.</p>
+                    <p ng-hide="successful">Lo lamentamos, hubo un error en tu petición, favor de revisar los datos y si sigues teniendo problemas mándanos un correo a humigym@gmail.com.</p>
+                </div>
+                <div class="modal-footer">
+                    <a class="btn btn-default" data-dismiss="modal">Close</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
