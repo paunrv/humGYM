@@ -8,58 +8,69 @@
         <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
         <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css"
         rel="stylesheet" type="text/css">
-        <link href="http://pingendo.github.io/pingendo-bootstrap/themes/default/bootstrap.css"
-        rel="stylesheet" type="text/css">
+        <link href="css/animate.css" rel="stylesheet" type="text/css">
+        <link href="css/humi.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="Index.css">
     </head>
     
-    <body>
-        <div class="cover">
-            <div class="navbar navbar-default">
-                <div class="container">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex-collapse">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        <a class="navbar-brand" href="concepto.html"><span>Academia y artes marciales</span></a>
-                    </div>
-                    <div class="collapse navbar-collapse" id="navbar-ex-collapse">
-                        <ul class="nav navbar-nav navbar-right">
-                            <li class="active">
-                                <a href="Index.html">Inicio</a>
-                            </li>
-                            <li class="active">
-                                <a href="horario.html">Horario</a>
-                            </li>
-                            <li>
-                                <a href="contacto.html">¡Contactanos!</a>
-                            </li>
-                        </ul>
-                    </div>
+    <body ng-controller="ContenidoController">
+        <div class="navbar navbar-default navbar-fixed-top navbar-inverse">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand"><img height="20" alt="Brand" src="img/humiNombreBlanco.png"></a>
+                </div>
+                <div class="collapse navbar-collapse" id="navbar-ex-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="" ng-click="template = 'principal.html'">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="" ng-click="template = 'horario.html'">Horario</a>
+                        </li>
+                        <li>
+                            <a href="" ng-click="template = 'contacto.html'">¡Contactanos!</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-            <div class="cover-image" style="background-image : url('img/trofeos.jpg')"></div>
         </div>
-        <div class="section">
+        <div class="section text-center">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6">
-                        <div class="embed-responsive embed-responsive-16by9">
-                            <iframe class="embed-responsive-item" src="http://www.youtube.com/embed/SEYMim3eMBY"
-                            allowfullscreen=""></iframe>
+                    <div class="col-md-8">
+                        <div class="col-md-12">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h3 class="text-left text-muted">Servicios</h3>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <h3 class="text-right">Taekwondo</h3>
+                                <p class="text-left">Es un arte marcial de origen coreano. Con el tiempo se transformo en un
+                                    deporte olímpico.
+                                    <br>Consiste en el control de los movimientos: bloquear golpes, patear y golpear
+                                    sin armas.
+                                    <br>Defensa personal y un excelente ejercicio para mantenerse en forma.</p>
+                            </div>
+                            <img src="img/humi.png" class="img-circle img-responsive" height="190"
+                            width="190">
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <h1 class="text-warning">Historia</h1>
-                        <p>HUMI GYM nace con una iniciativa de Taekwondo. En la busqueda de un espacio
+                    <div class="col-md-4">
+                        <h3 class="text-left text-warning">Historia</h3>
+                        <p class="text-justify">HUMI GYM nace con una iniciativa de Taekwondo. En la busqueda de un espacio
                             optimo para poder dar clases, nos enfrentamos con que no habia ningun lugar
                             para éste propósito, es cuando nace HUMI GYM; en un principio diseñado
                             para que fuera un GYM de usos multiples; despúes de un estudio, se centra
                             en las artes marciales y luchas, proporcionando un lugar con las condiciones
                             ideales para éste tipo de actividades.</p>
-                        <h1 class="text-left">Valores</h1>
+                        <h3 class="text-left text-muted">Valores</h3>
                         <ul class="text-left">
                             <li>Integridad</li>
                             <li>Pasión</li>
@@ -69,6 +80,31 @@
                             <li>Innovación</li>
                             <li>Filosofía de las diferntes técnicas</li>
                         </ul>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h3 class="text-left text-muted">Visión</h3>
+                                <p class="text-left">Ser el mejor GYM de la región con una gran variedad de
+                                    <br>
+                                    <strong>
+                                        <b>artes marciales y tipos de luchas.</b>
+                                    </strong>
+                                </p>
+                                <h3 class="text-left text-muted">Misión</h3>
+                                <p class="text-left">Ofrecer a la comunidad de Ensenada un espacio especializado en el área
+                                    de artes marciales y luchas, con excelentes instalaciones y maestros capacitádos.</p>
+                                <h3
+                                class="text-left text-warning">Propuesta</h3>
+                                    <p class="text-left">HUMI GYM, invita a todos los maestros con iniciativa, te ayuda a que empieces
+                                        a dar un servicio de calidad, profesional con instalcioens optimas e identidad
+                                        corporatíva.&nbsp;
+                                        <br>
+                                        <br>HUMI GYM renta el espacio para que puedas empezar tu propia escuela.&nbsp;
+                                        <br>
+                                        <b>5 días, 3 días 2 días a la semana</b>
+                                        <br>Tu dices cuales son tus necesidades y nosotros te apoyamos.</p>
+                                    <b></b>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -76,41 +112,7 @@
         <div class="section">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6">
-                        <h1 class="text-danger text-right">Visión</h1>
-                        <p class="text-right">Ser el mejor GYM de la región con una gran variedad de
-                            <br>
-                            <strong>
-                                <b>artes marciales y tipos de luchas.</b>
-                            </strong>
-                        </p>
-                        <h1 class="text-primary text-right">Misión</h1>
-                        <p class="text-right">Ofrecer a la comunidad de Ensenada un espacio especializado en el área
-                            de artes marciales y luchas, con excelentes instalaciones y maestros capacitádos.</p>
-                        <h1
-                        class="text-right text-success">Propuesta</h1>
-                            <p class="text-right">HUMI GYM, invita a todos los maestros con iniciativa, te ayuda a que empieces
-                                a dar un servicio de calidad, profesional con instalcioens optimas e identidad
-                                corporatíva.&nbsp;
-                                <br>
-                                <br>HUMI GYM renta el espacio para que puedas empezar tu propia escuela.&nbsp;
-                                <br>
-                                <b>5 días, 3 días 2 días a la semana</b>
-                                <br>Tu dices cuales son tus necesidades y nosotros te apoyamos.</p>
-                            <b></b>
-                    </div>
-                    <b>
-                        <b>
-                            <div class="col-md-6">
-                                <img src="img/20150527_120439_Richtone(HDR).jpg" class="img-responsive">
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <img src="img/trampolines.jpg" class="img-responsive">
-                                    </div>
-                                </div>
-                            </div>
-                        </b>
-                    </b>
+                    <b></b>
                 </div>
                 <b>
                     <b></b>
@@ -126,37 +128,22 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-md-12">
-                                <h1 class="text-center text-warning">Maestros</h1>
+                                <h1 class="text-center text-muted">Maestros</h1>
                                 <p class="text-center">Comprometidos con el bienestar de nuestro cuerpo y mente.</p>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-md-4">
-                                <img src="http://pingendo.github.io/pingendo-bootstrap/assets/user_placeholder.png"
-                                class="center-block img-circle img-responsive">
-                            </div>
-                            <div class="col-md-4">
+                            <div class="col-md-12">
                                 <img src="http://pingendo.github.io/pingendo-bootstrap/assets/user_placeholder.png"
                                 class="center-block img-circle img-responsive">
                                 <h3 class="text-center">Paulina Noriega</h3>
                                 <p class="text-center">Taekwondo</p>
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <div class="embed-responsive embed-responsive-16by9">
-                                            <iframe class="embed-responsive-item" src="http://www.youtube.com/embed/X804FfU1N6Q"
-                                            allowfullscreen=""></iframe>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <img src="http://pingendo.github.io/pingendo-bootstrap/assets/user_placeholder.png"
-                                class="center-block img-circle img-responsive">
                             </div>
                         </div>
                     </div>
                 </div>
-                <footer class="section section-danger">
+                <div class="push"></div>
+                <footer class="footer section section-success">
                     <div class="container">
                         <div class="row">
                             <div class="col-sm-6">
@@ -198,6 +185,8 @@
                         </div>
                     </div>
                 </footer>
+                <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+                <script src="js/humi.js"></script>
             </b>
         </b>
     </body>
