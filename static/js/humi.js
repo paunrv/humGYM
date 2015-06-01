@@ -1,8 +1,43 @@
 'use strict';
-var app = angular.module('humi', []);
+var app = angular.module('humi', ['ngStorage']);
 
-app.controller('ContenidoController', ['$scope', function($scope) {
+app.controller('ContenidoController', ['$scope', '$http','$sessionStorage', function($scope, $http, $sessionStorage) {
+	$scope.user = $sessionStorage.user || false;
+
 	$scope.template = 'principal.html';
+	$scope.username = '';
+	$scope.password = '';
+
+	$scope.login = function() {
+		$http.
+		post('/api/Users/login', {
+			username: $scope.username,
+			password: $scope.password,
+		}).
+		success(function(data) {
+			$scope.user = {
+				accessToken: data.id,
+				username: $scope.username
+			};
+			$scope.passwordError = false;
+
+			$sessionStorage.user = $scope.user;
+			$sessionStorage.$save();
+
+		}).
+		error(function() {
+			$scope.passwordError = true;
+		});
+	};
+
+	$scope.logout = function(){
+		$sessionStorage.user = null;
+		$sessionStorage.$save();
+		$scope.username = '';
+		$scope.password = '';
+		$scope.user = false;
+	};
+
 }]);
 
 
@@ -51,7 +86,7 @@ app.controller('HorariosController', ['$scope', '$http', function($scope, $http)
 
 	$scope.seleccionarClase = function(nombre) {
 
-		$scope.imagen = "img/error.png"
+		$scope.imagen = 'img/error.png';
 		return function() {
 			$scope.valido = false;
 			for (var clase in clases) {
