@@ -29,5 +29,9 @@
   "Clase": {
     "dataSource": "db",
     "public": true
+  },
+  "InformacionClase": {
+    "dataSource": "db",
+    "public": true
   }
 }
