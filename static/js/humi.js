@@ -44,7 +44,7 @@ app.controller('ContenidoController', ['$scope', '$http', '$sessionStorage', fun
 			"nombre": nombre,
 			"imagen": imagen,
 			"precio": precio,
-			"cantidad": cantidad;
+			"cantidad": cantidad
 		});
 	};
 	$scope.login = function() {
