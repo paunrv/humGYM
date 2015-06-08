@@ -117,23 +117,8 @@ app.controller('HorariosController', ['$scope', '$http', function($scope, $http)
 }]);
 
 $scope.onAgregarCarrito = function() {
-            "precio": [{
-			"tamano": "XS",
-			"precio": 59.99
-		}, {
-			"tamano": "S",
-			"precio": 59.99
-		}, {
-			"tamano": "M",
-			"precio": 59.99
-		}, {
-			"tamano": "L",
-			"precio": 59.99
-		}, {
-			"tamano": "XL",
-			"precio": 59.99
-		}]
-        }
+         
+        };
 
 app.controller('TiendaController', ['$scope', '$http', function($scope, $http) {
 
