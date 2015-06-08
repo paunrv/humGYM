@@ -271,6 +271,7 @@ app.controller('TiendaController', ['$scope', '$http', function($scope, $http) {
 			"tamano": "XL",
 			"precio": 9.99
 		}]
+	},
 		{
 		"id": "55751278366a24d12a4bf47d",
 		"nombre": "Coderas",
