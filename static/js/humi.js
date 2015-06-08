@@ -139,9 +139,7 @@ app.controller('TiendaController', ['$scope', '$http', function($scope, $http) {
 			"tamano": "XL",
 			"precio": 59.99
 		}]
-	}];
-
-		$scope.productos = [{
+	}, {
 		"id": "55751278366a24d12a4bf47d",
 		"nombre": "Concha",
 		"imagen": "img/concha.png",
@@ -162,8 +160,7 @@ app.controller('TiendaController', ['$scope', '$http', function($scope, $http) {
 			"tamano": "XL",
 			"precio": 30.99
 		}]
-	},
-	{
+	}, {
 		"id": "55751278366a24d12a4bf47d",
 		"nombre": "Coderas",
 		"imagen": "img/coderas.png",
@@ -184,8 +181,7 @@ app.controller('TiendaController', ['$scope', '$http', function($scope, $http) {
 			"tamano": "XL",
 			"precio": 29.99
 		}]
-	},
-	{
+	}, {
 		"id": "55751278366a24d12a4bf47d",
 		"nombre": "Espinilleras",
 		"imagen": "img/espinilleras.png",
@@ -206,8 +202,7 @@ app.controller('TiendaController', ['$scope', '$http', function($scope, $http) {
 			"tamano": "XL",
 			"precio": 44.99
 		}]
-	},
-	{
+	}, {
 		"id": "55751278366a24d12a4bf47d",
 		"nombre": "Guantes",
 		"imagen": "img/guantes.png",
@@ -228,7 +223,7 @@ app.controller('TiendaController', ['$scope', '$http', function($scope, $http) {
 			"tamano": "XL",
 			"precio": 39.99
 		}]
-	}];
+	}, {
 
 		"id": "55751278366a24d12a4bf47d",
 		"nombre": "Empeineras",
@@ -250,7 +245,7 @@ app.controller('TiendaController', ['$scope', '$http', function($scope, $http) {
 			"tamano": "XL",
 			"precio": 55.99
 		}]
-	}];
+	}, {
 
 		"id": "55751278366a24d12a4bf47d",
 		"nombre": "Peto",
@@ -272,7 +267,7 @@ app.controller('TiendaController', ['$scope', '$http', function($scope, $http) {
 			"tamano": "XL",
 			"precio": 72.99
 		}]
-	}];
+	}, {
 
 		"id": "55751278366a24d12a4bf47d",
 		"nombre": "Protección Bucal",
