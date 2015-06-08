@@ -33,5 +33,9 @@
   "InformacionClase": {
     "dataSource": "db",
     "public": true
+  },
+  "Producto": {
+    "dataSource": "db",
+    "public": true
   }
 }
