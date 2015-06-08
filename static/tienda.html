@@ -11,7 +11,7 @@
                         <img ng-src="{{producto.imagen}}" class="img-responsive"
                         height="250" width="250">
                         <p align="center">{{producto.descripcion}}</p>
-                        <h3 class="text-center">{{producto.precio[0].precio}}</h3>
+                        <h3 class="text-center">{{producto.precio[0].precio | currency:"USD$"}}</h3>
                         <a class="btn btn-primary" ng-click="onAgregarCarrito()">Agregar a carrito</a>
                     </div>
                 </div>
