@@ -141,5 +141,138 @@ app.controller('TiendaController', ['$scope', '$http', function($scope, $http) {
 		}]
 	}];
 
+		$scope.productos = [{
+		"id": "55751278366a24d12a4bf47d",
+		"nombre": "Concha",
+		"imagen": "img/concha.png",
+		"descripcion": "Uso obligatorio para pelear",
+		"precio": [{
+			"tamano": "XS",
+			"precio": 30.99
+		}, {
+			"tamano": "S",
+			"precio": 30.99
+		}, {
+			"tamano": "M",
+			"precio": 30.99
+		}, {
+			"tamano": "L",
+			"precio": 30.99
+		}, {
+			"tamano": "XL",
+			"precio": 30.99
+		}]
+	},
+	{
+		"id": "55751278366a24d12a4bf47d",
+		"nombre": "Coderas",
+		"imagen": "img/coderas.png",
+		"descripcion": "Uso obligatorio para pelear",
+		"precio": [{
+			"tamano": "XS",
+			"precio": 29.99
+		}, {
+			"tamano": "S",
+			"precio": 29.99
+		}, {
+			"tamano": "M",
+			"precio": 29.99
+		}, {
+			"tamano": "L",
+			"precio": 29.99
+		}, {
+			"tamano": "XL",
+			"precio": 29.99
+		}]
+	},
+	{
+		"id": "55751278366a24d12a4bf47d",
+		"nombre": "Espinilleras",
+		"imagen": "img/espinilleras.png",
+		"descripcion": "Uso obligatorio para pelear",
+		"precio": [{
+			"tamano": "XS",
+			"precio": 44.99
+		}, {
+			"tamano": "S",
+			"precio": 44.99
+		}, {
+			"tamano": "M",
+			"precio": 44.99
+		}, {
+			"tamano": "L",
+			"precio": 44.99
+		}, {
+			"tamano": "XL",
+			"precio": 44.99
+		}]
+	},
+	{
+		"id": "55751278366a24d12a4bf47d",
+		"nombre": "Guantes",
+		"imagen": "img/guantes.png",
+		"descripcion": "Uso obligatorio para pelear",
+		"precio": [{
+			"tamano": "XS",
+			"precio": 39.99
+		}, {
+			"tamano": "S",
+			"precio": 39.99
+		}, {
+			"tamano": "M",
+			"precio": 39.99
+		}, {
+			"tamano": "L",
+			"precio": 39.99
+		}, {
+			"tamano": "XL",
+			"precio": 39.99
+		}]
+	}];
+
+		"id": "55751278366a24d12a4bf47d",
+		"nombre": "Empeineras",
+		"imagen": "img/empeineras.png",
+		"descripcion": "Uso obligatorio para pelear",
+		"precio": [{
+			"tamano": "XS",
+			"precio": 55.99
+		}, {
+			"tamano": "S",
+			"precio": 55.99
+		}, {
+			"tamano": "M",
+			"precio": 55.99
+		}, {
+			"tamano": "L",
+			"precio": 55.99
+		}, {
+			"tamano": "XL",
+			"precio": 55.99
+		}]
+	}];
+
+		"id": "55751278366a24d12a4bf47d",
+		"nombre": "Peto",
+		"imagen": "img/peto.png",
+		"descripcion": "Uso obligatorio para pelear",
+		"precio": [{
+			"tamano": "XS",
+			"precio": 72.99
+		}, {
+			"tamano": "S",
+			"precio": 72.99
+		}, {
+			"tamano": "M",
+			"precio": 72.99
+		}, {
+			"tamano": "L",
+			"precio": 72.99
+		}, {
+			"tamano": "XL",
+			"precio": 72.99
+		}]
+	}];
+
 
 }]);
