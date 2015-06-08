@@ -274,5 +274,27 @@ app.controller('TiendaController', ['$scope', '$http', function($scope, $http) {
 		}]
 	}];
 
+		"id": "55751278366a24d12a4bf47d",
+		"nombre": "Protección Bucal",
+		"imagen": "img/pbucal.png",
+		"descripcion": "Uso obligatorio para pelear",
+		"precio": [{
+			"tamano": "XS",
+			"precio": 9.99
+		}, {
+			"tamano": "S",
+			"precio": 9.99
+		}, {
+			"tamano": "M",
+			"precio": 9.99
+		}, {
+			"tamano": "L",
+			"precio": 9.99
+		}, {
+			"tamano": "XL",
+			"precio": 9.99
+		}]
+	}];
+
 
 }]);
