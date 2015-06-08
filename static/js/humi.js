@@ -293,7 +293,6 @@ app.controller('TiendaController', ['$scope', '$http', function($scope, $http) {
 			"tamano": "XL",
 			"precio": 29.99
 		}]
-	},
 	}];
 
 
