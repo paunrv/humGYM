@@ -40,7 +40,7 @@
                         <li>
                             <a href="" ng-click="template = 'contacto.html'">¡Contactanos!</a>
                         </li>
-                        <li>
+                        <li ng-show="user">
                             <a href="" ng-click="template = 'tienda.html'">Tienda</a>
                         </li>
                         <li ng-show="user">
@@ -58,6 +58,7 @@
                             </div>
                       </li>
                       <p ng-show="user" style="color:white" class="navbar-text">Conectado como, <b>{{user.username}}</b></p> 
+                      <p ng-show="user" style="color:white" class="navbar-text">Tienda, <b>{{user.username}}</b></p> 
                     </ul>
                 </div>
             </div>
