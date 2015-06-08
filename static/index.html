@@ -49,10 +49,8 @@
                             <div class="dropdown-menu" style="padding:17px;">
                                 <div class="row" ng-repeat="objeto in carrito">
                                     <div>
-                                        <img ng-src="{{objeto.imagen}}">
-                                        <p>{{objeto.nombre}} - {{objeto.cantidad}}</p>
-                                        <p>{{objeto.precio.tamano}}</p>
-                                        <p>{{objeto.precio.precio | currency:"USD$"}}</p>
+                                        <img ng-src="{{objeto.imagen}}" height="25" width="25">
+                                        <p>{{objeto.nombre}} - {{objeto.cantidad}} - {{objeto.precio.tamano}} - {{objeto.precio.precio | currency:"USD$"}}</p>
                                     </div>
                                 </div>
                                 <div class="row">
