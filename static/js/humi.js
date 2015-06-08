@@ -46,6 +46,7 @@ app.controller('ContenidoController', ['$scope', '$http', '$sessionStorage', fun
 			"precio": precio,
 			"cantidad": cantidad
 		});
+		$scope.calcularTotal();
 	};
 	$scope.login = function() {
 		$http.

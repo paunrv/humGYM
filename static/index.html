@@ -44,7 +44,7 @@
                         <li ng-show="user">
                             <a href="" ng-click="template = 'tienda.html'">Tienda</a>
                         </li>
-                        <li class="dropdown" id="carrito" ng-hide="user">
+                        <li class="dropdown" id="carrito" ng-show="user">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="navLogin">Carrito</a>
                             <div class="dropdown-menu" style="padding:17px;">
                                 <div class="row" ng-repeat="objeto in carrito">
