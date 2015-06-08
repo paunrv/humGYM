@@ -7,21 +7,46 @@ app.controller('ContenidoController', ['$scope', '$http', '$sessionStorage', fun
 	$scope.template = 'principal.html';
 	$scope.username = '';
 	$scope.password = '';
+	$scope.total = 0;
 
-	var carrito = [{
-		"producto": {
-			"id": "55751278366a24d12a4bf47d",
-			"nombre": "Casco",
-			"imagen": "img/casco.png",
-			"descripcion": "Uso obligatorio para pelear",
-			"precio": {
-				"tamano": "XS",
-				"precio": 59.99
-			}
+	$scope.carrito = [{
+		"id": "5575c80a24108a0300f5bb59",
+		"nombre": "Espinilleras",
+		"imagen": "img/espinilleras.png",
+		"precio": {
+			"tamano": "XS",
+			"precio": 44.99
+		},
+		"cantidad": 3
+	}, {
+		"id": "5575c81524108a0300f5bb5a",
+		"nombre": "Guantes",
+		"imagen": "img/guantes.png",
+		"precio": {
+			"tamano": "M",
+			"precio": 39.99
 		},
 		"cantidad": 2
 	}];
 
+
+	$scope.calcularTotal = function(){
+		var total = 0;
+		for(var objeto in carrito){
+			total += objeto.precio.precio;
+		}
+		$scope.total = total;
+
+	};
+	$scope.onAgregarCarrito = function(id, nombre, imagen, precio, cantidad) {
+		carrito.push({
+			"id": id,
+			"nombre": nombre,
+			"imagen": imagen,
+			"precio": precio,
+			"cantidad": cantidad;
+		});
+	};
 	$scope.login = function() {
 		$http.
 		post('/api/Users/login', {
@@ -117,13 +142,9 @@ app.controller('HorariosController', ['$scope', '$http', function($scope, $http)
 }]);
 
 app.controller('TiendaController', ['$scope', '$http', function($scope, $http) {
-
-	$scope.onAgregarCarrito = function() {
-         
-    };
 	$http.get('/api/Productos').
 	success(function(data) {
-		$scope.productos  = data;
+		$scope.productos = data;
 	}).
 	error(function() {});
 }]);
