@@ -294,6 +294,95 @@ app.controller('TiendaController', ['$scope', '$http', function($scope, $http) {
 			"precio": 29.99
 		}]
 	}];
+	{
+
+		"id": "55751278366a24d12a4bf47d",
+		"nombre": "Zapatillas",
+		"imagen": "img/zapatillas.png",
+		"descripcion": "Ideales para practicar con calzado",
+		"precio": [{
+			"tamano": "XS",
+			"precio": 55.99
+		}, {
+			"tamano": "S",
+			"precio": 55.99
+		}, {
+			"tamano": "M",
+			"precio": 55.99
+		}, {
+			"tamano": "L",
+			"precio": 55.99
+		}, {
+			"tamano": "XL",
+			"precio": 55.99
+		}]
+	}, {
+
+		"id": "55751278366a24d12a4bf47d",
+		"nombre": "N uniforme",
+		"imagen": "img/.uniformeNegras.png",
+		"descripcion": "Para grados de negra",
+		"precio": [{
+			"tamano": "XS",
+			"precio": 72.99
+		}, {
+			"tamano": "S",
+			"precio": 72.99
+		}, {
+			"tamano": "M",
+			"precio": 72.99
+		}, {
+			"tamano": "L",
+			"precio": 72.99
+		}, {
+			"tamano": "XL",
+			"precio": 72.99
+		}]
+	}, {
+
+		"id": "55751278366a24d12a4bf47d",
+		"nombre": "C uniforme",
+		"imagen": "img/uniformeBlancas.png",
+		"descripcion": "Para grados de color",
+		"precio": [{
+			"tamano": "XS",
+			"precio": 9.99
+		}, {
+			"tamano": "S",
+			"precio": 9.99
+		}, {
+			"tamano": "M",
+			"precio": 9.99
+		}, {
+			"tamano": "L",
+			"precio": 9.99
+		}, {
+			"tamano": "XL",
+			"precio": 9.99
+		}]
+	},
+		{
+		"id": "55751278366a24d12a4bf47d",
+		"nombre": "I uniforme",
+		"imagen": "img/uniformeNiño.png",
+		"descripcion": "Para menores de edad con grado de negra",
+		"precio": [{
+			"tamano": "XS",
+			"precio": 29.99
+		}, {
+			"tamano": "S",
+			"precio": 29.99
+		}, {
+			"tamano": "M",
+			"precio": 29.99
+		}, {
+			"tamano": "L",
+			"precio": 29.99
+		}, {
+			"tamano": "XL",
+			"precio": 29.99
+		}]
+	}];
 
 
 }]);
