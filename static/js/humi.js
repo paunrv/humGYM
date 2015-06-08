@@ -116,12 +116,11 @@ app.controller('HorariosController', ['$scope', '$http', function($scope, $http)
 
 }]);
 
-$scope.onAgregarCarrito = function() {
-         
-        };
-
 app.controller('TiendaController', ['$scope', '$http', function($scope, $http) {
 
+	$scope.onAgregarCarrito = function() {
+         
+    };
 	$scope.productos = [{
 		"id": "55751278366a24d12a4bf47d",
 		"nombre": "Casco",
