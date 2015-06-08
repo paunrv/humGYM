@@ -1,40 +1,19 @@
 <div class="section" ng-controller="TiendaController">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h1 class="text-center">Equipo de Taekwondo</h1>
-            </div>
-        </div>
-        <div class="section">
-            <div class="col-md-3" align="center" ng-repeat="producto in productos">
-                <h2 class="text-center">{{producto.nombre}}</h2>
-                <img ng-src="{{producto.imagen}}" class="img-responsive" height="250"
-                width="250">
-                <p align="center">{{producto.descripcion}}</p>
-                <h3 class="text-center">{{producto.precio[0].precio}}</h3>
-                <div class="btn-group">
-                    <a class="btn btn-success dropdown-toggle" data-toggle="dropdown"> Tamaño </a>
-                    <ul class="dropdown-menu" role="menu">
-                        <li ng-repeat="precio in producto.precios">
-                            <a href="#">{{precio.tamano}}</a>
-                        </li>
-                    </ul>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="text-center">Equipo de Taekwondo</h1>
+                    </div>
                 </div>
-                <div class="btn-group">
-                    <a class="btn btn-danger dropdown-toggle" data-toggle="dropdown"> Cantidad </a>
-                    <ul class="dropdown-menu" role="menu">
-                        <li>
-                            <a href="#">1</a>
-                        </li>
-                        <li>
-                            <a href="#">2</a>
-                        </li>
-                        <li>
-                            <a href="#">3</a>
-                        </li>
-                    </ul>
+                <div class="section">
+                    <div class="col-md-3" align="center" ng-repeat="producto in productos">
+                        <h2 class="text-center">{{producto.nombre}}</h2>
+                        <img ng-src="{{producto.imagen}}" class="img-responsive"
+                        height="250" width="250">
+                        <p align="center">{{producto.descripcion}}</p>
+                        <h3 class="text-center">{{producto.precio[0].precio}}</h3>
+                        <a class="btn btn-primary" ng-click="onAgregarCarrito()">Agregar a carrito</a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</div>
