@@ -206,7 +206,6 @@ app.controller('TiendaController', ['$scope', '$http', function($scope, $http) {
 			"precio": 39.99
 		}]
 	}, {
-
 		"id": "55751278366a24d12a4bf47d",
 		"nombre": "Empeineras",
 		"imagen": "img/empeineras.png",
@@ -228,7 +227,6 @@ app.controller('TiendaController', ['$scope', '$http', function($scope, $http) {
 			"precio": 55.99
 		}]
 	}, {
-
 		"id": "55751278366a24d12a4bf47d",
 		"nombre": "Peto",
 		"imagen": "img/peto.png",
@@ -250,7 +248,6 @@ app.controller('TiendaController', ['$scope', '$http', function($scope, $http) {
 			"precio": 72.99
 		}]
 	}, {
-
 		"id": "55751278366a24d12a4bf47d",
 		"nombre": "Protección Bucal",
 		"imagen": "img/pbucal.png",
@@ -271,8 +268,7 @@ app.controller('TiendaController', ['$scope', '$http', function($scope, $http) {
 			"tamano": "XL",
 			"precio": 9.99
 		}]
-	},
-		{
+	},{
 		"id": "55751278366a24d12a4bf47d",
 		"nombre": "Coderas",
 		"imagen": "img/coderas.png",
@@ -293,9 +289,7 @@ app.controller('TiendaController', ['$scope', '$http', function($scope, $http) {
 			"tamano": "XL",
 			"precio": 29.99
 		}]
-	}];
-	{
-
+	},{
 		"id": "55751278366a24d12a4bf47d",
 		"nombre": "Zapatillas",
 		"imagen": "img/zapatillas.png",
@@ -317,7 +311,6 @@ app.controller('TiendaController', ['$scope', '$http', function($scope, $http) {
 			"precio": 55.99
 		}]
 	}, {
-
 		"id": "55751278366a24d12a4bf47d",
 		"nombre": "N uniforme",
 		"imagen": "img/.uniformeNegras.png",
@@ -339,7 +332,6 @@ app.controller('TiendaController', ['$scope', '$http', function($scope, $http) {
 			"precio": 72.99
 		}]
 	}, {
-
 		"id": "55751278366a24d12a4bf47d",
 		"nombre": "C uniforme",
 		"imagen": "img/uniformeBlancas.png",
@@ -360,8 +352,7 @@ app.controller('TiendaController', ['$scope', '$http', function($scope, $http) {
 			"tamano": "XL",
 			"precio": 9.99
 		}]
-	},
-		{
+	},{
 		"id": "55751278366a24d12a4bf47d",
 		"nombre": "I uniforme",
 		"imagen": "img/uniformeNiño.png",
@@ -383,6 +374,4 @@ app.controller('TiendaController', ['$scope', '$http', function($scope, $http) {
 			"precio": 29.99
 		}]
 	}];
-
-
 }]);
