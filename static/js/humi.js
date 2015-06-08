@@ -163,28 +163,7 @@ app.controller('TiendaController', ['$scope', '$http', function($scope, $http) {
 			"tamano": "XL",
 			"precio": 30.99
 		}]
-	}, {
-		"id": "55751278366a24d12a4bf47d",
-		"nombre": "Coderas",
-		"imagen": "img/coderas.png",
-		"descripcion": "Uso obligatorio para pelear",
-		"precio": [{
-			"tamano": "XS",
-			"precio": 29.99
-		}, {
-			"tamano": "S",
-			"precio": 29.99
-		}, {
-			"tamano": "M",
-			"precio": 29.99
-		}, {
-			"tamano": "L",
-			"precio": 29.99
-		}, {
-			"tamano": "XL",
-			"precio": 29.99
-		}]
-	}, {
+	},  {
 		"id": "55751278366a24d12a4bf47d",
 		"nombre": "Espinilleras",
 		"imagen": "img/espinilleras.png",
@@ -292,6 +271,28 @@ app.controller('TiendaController', ['$scope', '$http', function($scope, $http) {
 			"tamano": "XL",
 			"precio": 9.99
 		}]
+		{
+		"id": "55751278366a24d12a4bf47d",
+		"nombre": "Coderas",
+		"imagen": "img/coderas.png",
+		"descripcion": "Uso obligatorio para pelear",
+		"precio": [{
+			"tamano": "XS",
+			"precio": 29.99
+		}, {
+			"tamano": "S",
+			"precio": 29.99
+		}, {
+			"tamano": "M",
+			"precio": 29.99
+		}, {
+			"tamano": "L",
+			"precio": 29.99
+		}, {
+			"tamano": "XL",
+			"precio": 29.99
+		}]
+	},
 	}];
 
 
