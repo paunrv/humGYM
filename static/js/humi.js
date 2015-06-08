@@ -1,12 +1,26 @@
 'use strict';
 var app = angular.module('humi', ['ngStorage']);
 
-app.controller('ContenidoController', ['$scope', '$http','$sessionStorage', function($scope, $http, $sessionStorage) {
+app.controller('ContenidoController', ['$scope', '$http', '$sessionStorage', function($scope, $http, $sessionStorage) {
 	$scope.user = $sessionStorage.user || false;
 
 	$scope.template = 'principal.html';
 	$scope.username = '';
 	$scope.password = '';
+
+	var carrito = [{
+		"producto": {
+			"id": "55751278366a24d12a4bf47d",
+			"nombre": "Casco",
+			"imagen": "img/casco.png",
+			"descripcion": "Uso obligatorio para pelear",
+			"precio": {
+				"tamano": "XS",
+				"precio": 59.99
+			}
+		},
+		"cantidad": 2
+	}];
 
 	$scope.login = function() {
 		$http.
@@ -30,7 +44,7 @@ app.controller('ContenidoController', ['$scope', '$http','$sessionStorage', func
 		});
 	};
 
-	$scope.logout = function(){
+	$scope.logout = function() {
 		$sessionStorage.user = null;
 		$sessionStorage.$save();
 		$scope.username = '';
@@ -98,6 +112,34 @@ app.controller('HorariosController', ['$scope', '$http', function($scope, $http)
 			}
 		};
 	};
+
+
+}]);
+
+app.controller('TiendaController', ['$scope', '$http', function($scope, $http) {
+
+	$scope.productos = [{
+		"id": "55751278366a24d12a4bf47d",
+		"nombre": "Casco",
+		"imagen": "img/casco.png",
+		"descripcion": "Uso obligatorio para pelear",
+		"precio": [{
+			"tamano": "XS",
+			"precio": 59.99
+		}, {
+			"tamano": "S",
+			"precio": 59.99
+		}, {
+			"tamano": "M",
+			"precio": 59.99
+		}, {
+			"tamano": "L",
+			"precio": 59.99
+		}, {
+			"tamano": "XL",
+			"precio": 59.99
+		}]
+	}];
 
 
 }]);
